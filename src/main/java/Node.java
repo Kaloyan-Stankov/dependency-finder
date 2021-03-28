@@ -1,7 +1,9 @@
 import java.util.Objects;
 
 public class Node {
+
     String name;
+
     boolean visited;
 
     Node(String name) {

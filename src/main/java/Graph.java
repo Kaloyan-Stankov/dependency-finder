@@ -79,18 +79,4 @@ public class Graph {
         }
         System.out.println();
     }
-
-    void reversalSearch(Node node) {
-        node.visit();
-        System.out.print(node.name + " ");
-
-        LinkedList<Node> allNeighbors = dependencyList.get(node);
-        if (allNeighbors == null)
-            return;
-
-        for (Node neighbor : allNeighbors) {
-            if (!neighbor.isVisited())
-                depthFirstSearch(neighbor);
-        }
-    }
 }
